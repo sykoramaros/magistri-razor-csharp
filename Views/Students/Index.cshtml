@@ -1,0 +1,66 @@
+﻿@using Magistri.DTO
+@model IEnumerable<StudentDto>
+<h1>List of all students</h1>
+@* Formular pro nahravani souboru.xml do databaze *@
+<form method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Upload">
+    <div class="form-group mb-3">
+        <label for="fileUpload" class="btn btn-info">
+            Choose File
+            <input type="file" name="file" id="fileUpload" class="d-none" />
+            @*pozor, na name je zavisle jmeno parametru, cili souboru predavaneho do controlleru. Pokud se parametr jmenuje file, musi i name inputu byt file*@
+        </label>
+        <span id="fileName" class="ms-2 text-info">No file chosen</span>
+    </div>
+
+    <div class="form-group">
+        <input class="btn btn-warning" type="submit" value="Upload" />
+    </div>
+</form>
+<hr class="hr-dotted" />
+
+<div>
+    <a class="btn btn-success" asp-action="Create">Create</a>
+</div>
+<hr />
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model) {
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+                <div class="card border-primary mb-3 shadow-sm w-100">
+                    <div class="card-header border-primary fs-5">
+                        @item.FirstName @item.LastName
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Info</h5>
+                        <p class="card-text fst-italic">
+                            @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))) {
+                                <span>
+                                    ID: @item.Id<br/>
+                                </span>
+                            }
+                            Date of Birth: @item.DateOfBirth.ToShortDateString()
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary">
+                        <div class="row">
+                            @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))) {
+                                <div class="col">
+                                    <a class="btn btn-warning w-100 rounded-1" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                </div>
+                            }
+                            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin")) {
+                                <div class="col">
+                                    <form method="post">
+                                        <input class="btn btn-danger w-100 rounded-1" asp-action="Delete" asp-route-id="@item.Id" type="submit" value="Delete" />
+                                    </form>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Magistri
+build_property.RootNamespace = Magistri
+build_property.ProjectDir = /Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Grades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhZGVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Grades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhZGVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Grades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhZGVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Shared/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FjY2Vzc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL05vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Students/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Students/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Subjects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ViamVjdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Subjects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ViamVjdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Subjects/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ViamVjdHMvVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/marosh/RiderProjects/ASPNET/kurz/Magistri Vlastni Provizorni Monsterasp/Magistri/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bpz8hb5xau

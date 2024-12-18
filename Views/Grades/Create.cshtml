@@ -1,0 +1,25 @@
+@model Magistri.DTO.GradeDto
+<div>
+    <form class="mt-4" asp-action="Create">
+        <h1>Create a new grade</h1>
+        <div class="form-group">
+            <label asp-for="StudentId"></label>
+            <select class="form-control" asp-for="StudentId" asp-items="ViewBag.Students"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="SubjectId"></label>
+            <select class="form-control" asp-for="SubjectId" asp-items="ViewBag.Subjects"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Topic"></label>
+            <input type="text" asp-for="Topic" placeholder="What was examined" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Mark"></label>
+            <input type="number" asp-for="Mark" min="1" max="5" placeholder="Mark" class="form-control" />
+        </div>
+        <div>
+            <input class="btn btn-success mt-4" type="submit" value="Create" />
+        </div>
+    </form>
+</div>

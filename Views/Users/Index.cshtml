@@ -1,0 +1,32 @@
+@model IEnumerable<AppUser>
+@{
+    ViewData["Title"] = "ALL USERS";
+}
+<h1>All Users</h1>
+
+@* Tlačítko pro vytvoření nového uživatele *@
+<a asp-action="Create" class="btn btn-primary mb-3">Create a User</a>
+
+<div asp-validation-summary="ModelOnly" class="mb-3"></div>
+
+@* Seznam uživatelů místo tabulky *@
+<ul class="list-group list-group">
+    @foreach (AppUser user in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">ID: @user.Id</div>
+                <div><strong>Name:</strong> @user.UserName</div>
+                <div><strong>Email:</strong> @user.Email</div>
+            </div>
+            <div class="d-flex flex-column">
+                <a class="btn btn-sm btn-warning text-white mb-2" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                <form asp-action="Delete" asp-route-id="@user.Id" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        </li>
+    }
+</ul>

@@ -1,0 +1,44 @@
+@model IEnumerable<Magistri.ViewModels.GradesVM>
+<h1>List of all grades</h1>
+@if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))) {
+    <div>
+        <a class="btn btn-success" asp-controller="Grades" asp-action="Create">
+            Add a new grade
+        </a>
+    </div>
+}
+<hr />
+
+
+    <div class="row">
+        @foreach (var item in Model) {
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card border-primary fs-5 mb-3 shadow-sm w-100">
+                    <div class="card-header">
+                        @item.StudentName @item.StudentLastName
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.SubjectName: @item.Topic</h5>
+                        <p>
+                            <span class="fs-1 fw-bolder text-danger">@item.Mark</span><br>
+                            @item.Date.ToShortDateString()
+                        </p>
+                    </div>
+                    @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))) {
+                        <div class="card-footer bg-transparent border-primary">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-warning w-100 rounded-1" asp-controller="Grades" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                </div>
+                                <div class="col">
+                                    <form method="post" style="display:inline">
+                                        <button type="submit" class="btn btn-danger w-100 rounded-1" asp-controller="Grades" asp-action="Delete" asp-route-id="@item.Id">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>

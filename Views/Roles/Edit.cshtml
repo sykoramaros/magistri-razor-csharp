@@ -1,0 +1,71 @@
+@model RoleEdit
+@{
+    ViewData["Title"] = "UPDATE ROLE";
+}
+<h1>Edit Role</h1>
+
+<!-- Tlačítko pro návrat na seznam rolí -->
+<a asp-action="Index" class="btn btn-secondary mb-3">Back</a>
+
+<div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+<!-- Skrytá pole pro předání role -->
+<form method="post" class="mt-4">
+    <input type="hidden" asp-for="Role.Name" />
+    <input type="hidden" asp-for="Role.Id" />
+
+    <!-- Seznam pro přidání uživatelů -->
+    <h2 class="h5 mb-3">Add to @Model.Role.Name</h2>
+    <ul class="list-group mb-4">
+        @if (!Model.NonMembers.Any())
+        {
+            <li class="list-group-item text-muted text-center">
+                All users are already members
+            </li>
+        }
+        else
+        {
+            @foreach (AppUser user in Model.NonMembers)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@user.UserName</strong>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="AddIds" value="@user.Id" />
+                    </div>
+                </li>
+            }
+        }
+    </ul>
+
+    <!-- Seznam pro odstranění uživatelů -->
+    <h2 class="h5 mb-3">Remove from @Model.Role.Name</h2>
+    <ul class="list-group mb-4">
+        @if (!Model.Members.Any())
+        {
+            <li class="list-group-item text-muted text-center">
+                No users are members
+            </li>
+        }
+        else
+        {
+            @foreach (AppUser user in Model.Members)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@user.UserName</strong>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="DeleteIds" value="@user.Id" />
+                    </div>
+                </li>
+            }
+        }
+    </ul>
+
+    <!-- Tlačítko pro uložení změn -->
+    <div>
+        <button type="submit" class="btn btn-success mt-3">Save</button>
+    </div>
+</form>

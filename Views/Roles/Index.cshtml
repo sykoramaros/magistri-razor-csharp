@@ -1,0 +1,31 @@
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = "ROLES";    // vytgeneruje nazev zalozky v prohlizeci <title>Roles</title>
+}
+<h1>All Roles</h1>
+
+@* Tlačítko pro vytvoření nové role *@
+<a asp-action="Create" class="btn btn-success mb-3">Create a Role</a>
+
+@* Seznam rolí místo tabulky *@
+<ul class="list-group">
+    @foreach (var role in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">ID: @role.Id</div>
+                <div><strong>Name:</strong> @role.Name</div>
+            </div>
+            <div class="d-flex flex-column">
+                <a class="btn btn-sm btn-warning text-white mb-2" asp-action="Edit" asp-route-id="@role.Id">Edit</a>
+                <form asp-action="Delete" asp-route-id="@role.Id" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        </li>
+    }
+</ul>

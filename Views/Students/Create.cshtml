@@ -1,0 +1,51 @@
+﻿@using Magistri.DTO
+@model StudentDto
+<h1>Create a new student</h1>
+<form class="mt-4" asp-controller="Students" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input type="date" asp-for="DateOfBirth" class="form-control" />
+    </div>
+    <div>
+        <input class="btn btn-success mt-4" type="submit" value="Create" />
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
